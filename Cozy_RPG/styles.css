@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MedievalSharp", cursive;
+  font-weight: bold;
+  user-select: none;
+}
+
+:root {
+  --color-1: rgb(36, 207, 113);
+  --color-2: rgba(21, 82, 33, 0.616);
+  --color-3: rgb(63, 167, 106);
+  --color-4: rgb(166, 255, 210);
+  --color-5: rgb(43, 114, 58);
+  --bg-img: url("img/bg/belaniel-woods2.png");
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.toppest-row {
+  display: flex;
+  width: 100vw;
+  height: 60px;
+  background-color: var(--color-1);
+  border-bottom: 3px solid var(--color-2);
+}
+
+.toppest-row li {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  list-style: none;
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 50px;
+  width: 60px;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.header {
+  margin-top: 0px;
+  font-size: 55px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 600px;
+  border: 5px solid var(--color-1);
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+  font-size: 27px;
+  width: 70px;
+}
+
+.dpc-dps {
+  color: var(--color-1);
+  text-shadow: 2px 2px var(--color-5);
+  font-size: 35px;
+}
+
+.scene {
+  margin-top: 0px;
+  display: flex;
+}
+
+.main-row1 {
+  margin-top: 50px;
+}
+
+.scene li {
+  margin: 0 60px;
+  width: 600px;
+  height: 600px;
+  border: 5px solid var(--color-1);
+  border-top: none;
+  list-style: none;
+  display: flex;
+  border-radius: 6px;
+  background-color: var(--color-2);
+}
+
+.player-portrait {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.heroes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 280px;
+  height: 180px;
+  margin: 6px 6px 6px 8px;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+}
+
+.hero-data {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero-meta {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+
+.hero-container {
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+  background-color: var(--color-3);
+  padding: 0 5px;
+}
+
+.heroes button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 110px;
+  height: 110px;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+}
+
+.main-row2 {
+  margin-top: 50px;
+  display: flex;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-3);
+  border-radius: 6px;
+  border: 3px solid var(--color-1);
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: bold;
+}
+
+.false {
+  display: none;
+}
+
+.true {
+  display: inline-flex;
+}
+
+.b {
+  filter: grayscale(1) blur(0.05rem);
+}
+
+.heroes.b {
+  filter: sepia(0) blur(0);
+}
+
+.b-none {
+  filter: sepia(0) blur(0);
+}
+
+#enemy-pwr {
+  user-select: none;
+  position: absolute;
+  left: 45.2%;
+  top: 25%;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.enemy-portrait {
+  display: flex;
+  top: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#health {
+  width: 430px;
+  height: 40px;
+  border-radius: 6px;
+  border: 3px solid var(--color-1);
+  padding: 0.4px;
+}
+
+progress::-webkit-progress-value {
+  background: var(--color-4);
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+}
+
+.hp-container {
+  display: flex;
+  position: absolute;
+  top: 84%;
+  font-size: 20px;
+  left: 125px;
+}
+
+.level {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+  top: 79%;
+  left: 3.6%;
+  background-color: var(--color-3);
+  font-size: 35px;
+  text-align: center;
+  word-spacing: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#lvl-progress {
+  width: 100px;
+  height: 32px;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+  position: absolute;
+  top: -35px;
+  right: 0px;
+  background-color: var(--color-3);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boss {
+  width: 200px;
+  height: 50px;
+  border: 3px solid var(--color-1);
+  border-radius: 6px;
+  background-color: var(--color-3);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+}
+
+.boss-none {
+  display: none !important;
+}
+
+.stat-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.stat-row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 100px;
+  border: 5px solid var(--color-1);
+  background-color: var(--color-2);
+  border-radius: 6px;
+}
+
+.map {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+.area {
+  font-size: 40px;
+  color: var(--color-1);
+  text-shadow: 2px 2px var(--color-5);
+}
+
+.monster-name {
+  font-size: 25px;
+  color: var(--color-1);
+  text-shadow: 1px 1px var(--color-5);
+}
+
+.vertical-row {
+  position: absolute;
+  float: left;
+  height: 103px;
+  width: 5px;
+  border-radius: 6px;
+  /* edit this if you want */
+  background-color: var(--color-1);
+}
+
+.theme-default-5px {
+  background-color: rgba(2, 42, 130, 0.616);
+  border: 5px solid rgb(10, 93, 174);
+}
+
+.theme-default-3px {
+  background-color: rgba(2, 42, 130, 0.616);
+  border: 3px solid rgb(10, 93, 174);
+}
+
+.theme-default-head {
+  border-bottom: rgba(2, 42, 130, 0.616);
+  background-color: rgb(10, 93, 174);
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(3px, 3px) rotate(3deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
+
+  75% {
+    transform: translate(-3px, 3px) rotate(-3deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.enemy-portrait img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.not-enough {
+  background-color: grey;
+  border-color: rgb(92, 92, 92);
+  color: rgb(173, 173, 173);
+}
+
+.world-2 {
+  --color-1: rgb(255, 211, 15);
+  --color-2: rgba(130, 70, 2, 0.616);
+  --color-3: rgb(233, 134, 21);
+  --color-4: rgb(255, 195, 104);
+  --color-5: rgb(255, 164, 104);
+  --bg-img: url("img/bg/burnt-belaniel-woods2.png");
+}
+
+.world-1 {
+  --color-1: rgb(36, 207, 113);
+  --color-2: rgba(21, 82, 33, 0.616);
+  --color-3: rgb(63, 167, 106);
+  --color-4: rgb(166, 255, 210);
+  --color-5: rgb(43, 114, 58);
+  --bg-img: url("img/bg/belaniel-woods2.png");
+}
+
+.world-251 {
+  --color-1: rgb(161, 85, 143);
+  --color-2: rgba(231, 162, 116, 0.616);
+  --color-3: rgba(183, 125, 197, 0.637);
+  --color-4: rgb(241, 129, 129);
+  --color-5: rgba(255, 222, 200, 0.801);
+  --bg-img: url("img/bg/sky2.png");
+}
+
+.world-252 {
+  --color-1: rgb(10, 93, 174);
+  --color-2: rgba(2, 42, 130, 0.616);
+  --color-3: rgb(21, 42, 233);
+  --color-4: rgb(104, 207, 255);
+  --color-5: rgba(104, 207, 255);
+  --bg-img: url("img/bg/dark-lands.png");
+}

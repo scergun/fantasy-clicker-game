@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
+    <title>Fantasy Clicker Game</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="toppest-row">
+        <li>
+          <span>Money</span>
+          <span id="money"></span>
+        </li>
+        <li>
+          <span>Prestige</span>
+          <span id="prestige">0</span>
+        </li>
+        <li>
+          <span>Relics</span>
+          <span id="relics">0</span>
+        </li>
+        <div class="top-row">
+          <h1 class="header">Fantasy Clicker Game</h1>
+        </div>
+      </div>
+
+      <div class="main-row1">
+        <div class="stat-row">
+          <ul class="stats">
+            <li id="dpc-sep">
+              <span>DPC</span>
+              <span class="dpc-dps" id="dpc"></span>
+            </li>
+            <div class="vertical-row"></div>
+            <li>
+              <span>DPS</span>
+              <span class="dpc-dps" id="dps"></span>
+            </li>
+          </ul>
+          <div class="map">
+            <ul class="stat-row2">
+              <span class="area">Belaniel Woods</span>
+              <span class="monster-name">Lone Wolf</span>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="scene">
+          <li class="player-portrait"></li>
+
+          <li class="enemy-portrait">
+            <img
+              draggable="false"
+              class="monster-img"
+              src="img/w1-enemy/normals/lone-wolf.png"
+              alt=""
+            />
+            <span id="boss" class="boss-none">BOSS</span>
+            <div class="level">LVL</div>
+            <div class="hp-container">
+              <span id="enemy-pwr">hp</span>
+              <progress id="health" value="100" max="100"></progress>
+              <span id="lvl-progress">0/10</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
