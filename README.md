@@ -1,7 +1,7 @@
 # Fantasy Clicker Game 
 
 This project is a simple click-based game developed for testing purposes. Please note that the game does not have balanced gameplay, and it ends after reaching level 20.
-![Fantasy Clicker Game](https://i.imgur.com/koAX33v.gif)
+![Fantasy Clicker Game](https://i.imgur.com/Qztv5UF.gif)
 
 ## Overview
 
